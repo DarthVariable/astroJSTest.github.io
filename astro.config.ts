@@ -22,8 +22,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  output: 'static',
-
+  site: 'https://astroJSTest.github.io',
   integrations: [
     tailwind({
       applyBaseStyles: false,
