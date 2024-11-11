@@ -23,6 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   site: 'https://astroJSTest.github.io',
+  output: 'static',
   integrations: [
     tailwind({
       applyBaseStyles: false,
